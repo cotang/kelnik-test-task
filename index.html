@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Мои заказы</title>
+<meta name="description" content="">
+<!-- <meta name="viewport" content="width=1000"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="css/style.min.css" rel="stylesheet" media="screen">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+</script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="js/modernizr-custom.js"></script>
+
+<!--
+<link href="/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="icon" sizes="192x192" href="img/favicons/favicon-192x192.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-57x57.png">
+<meta name="theme-color" content="#2b2f38">
+<meta name="msapplication-TileColor" content="#2b2f38">
+<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+-->
+
+</head>
+
+<body>
+
+<header class="page-header">
+  <div class="page-header__logo">
+  	<h1 class="page-header__title">Мои заказы</h1>
+  </div>
+  <div class="page-header__sort">
+    <ul class="sort" id="sort">Сортировать:
+      <li class="sort__item  sort__item--date">
+      	<a class="sort__link  sort__link--sorted  asc" data-sort-by="date" href="">по дате
+      	  <span class="icon  icon--asc">&#9650;</span>
+      	  <span class="icon  icon--desc">&#9660;</span>
+      	</a>
+      </li>
+      <li class="sort__item  sort__item--ready">
+      	<a class="sort__link  asc" data-sort-by="ready" href="">по готовности
+      	  <span class="icon  icon--asc">&#9650;</span>
+      	  <span class="icon  icon--desc">&#9660;</span>
+      	</a>  	
+      </li>      
+    </ul>
+  </div>
+</header>
+
+
+<section class="page-content">
+	<ul class="page-content__list">
+		<li class="page-content__item  product">
+			<img class="product__img" src="img/pic.jpg" height="180" width="206" alt="product">
+			<div class="product__details">
+				<h2 class="product__name">Название заказа</h2>
+				<p class="product__parameter  product__parameter--status">Статус: <span>в печати</span></p>
+				<p class="product__parameter  product__parameter--loaded">Загружен: <span class="isotope-date">10.04.13</span></p>
+				<p class="product__parameter  product__parameter--material"><span>Фотополимер покрашенный</span></p>
+				<p class="product__parameter  product__parameter--amount">Количество экземпляров: <span>1</span></p>
+				<p class="product__result  product__result--ready">Выполнен на <span class="isotope-ready">30</span>%</p>
+				<p class="product__result  product__result--add"><a href="">+ добавить в магазин</a></p>
+			</div>	
+		</li>
+		<li class="page-content__item  product">
+			<img class="product__img" src="img/pic.jpg" height="180" width="206" alt="product">
+			<div class="product__details">
+				<h2 class="product__name">Название заказа</h2>
+				<p class="product__parameter  product__parameter--status">Статус: <span>отправлен</span></p>
+				<p class="product__parameter  product__parameter--loaded">Загружен: <span class="isotope-date">07.04.13</span></p>
+				<p class="product__parameter  product__parameter--material"><span>Фотополимер покрашенный</span></p>
+				<p class="product__parameter  product__parameter--amount">Количество экземпляров: <span>1</span></p>
+				<p class="product__parameter  product__parameter--color">Цвет: <span>черный</span></p>
+				<p class="product__parameter  product__parameter--dimensions">Размер: <span>160x70</span></p>
+				<p class="product__result  product__result--ready">Выполнен на <span class="isotope-ready">70</span>%</p>
+				<p class="product__result  product__result--add"><a href="">+ добавить в магазин</a></p>
+			</div>				
+		</li>
+		<li class="page-content__item  product product--added">
+			<img class="product__img" src="img/pic.jpg" height="180" width="206" alt="product">
+			<div class="product__details">
+				<h2 class="product__name">Название заказа</h2>
+				<p class="product__parameter  product__parameter--status">Статус: <span>в Моем магазине</span></p>
+				<p class="product__parameter  product__parameter--loaded">Загружен: <span class="isotope-date">22.04.13</span></p>
+				<p class="product__parameter  product__parameter--material"><span>Фотополимер покрашенный</span></p>
+				<p class="product__parameter  product__parameter--amount">Количество экземпляров: <span>1</span></p>
+				<p class="product__result  product__result--ready">Выполнен на <span class="isotope-ready">40</span>%</p>
+				<p class="product__result  product__result--add"><a href="">+ добавить в магазин</a></p>
+			</div>	
+		</li>	
+		<li class="page-content__item  product">
+			<img class="product__img" src="img/pic.jpg" height="180" width="206" alt="product">
+			<div class="product__details">
+				<h2 class="product__name">Название заказа</h2>
+				<p class="product__parameter  product__parameter--status">Статус: <span>отправлен</span></p>
+				<p class="product__parameter  product__parameter--loaded">Загружен: <span class="isotope-date">30.04.13</span></p>
+				<p class="product__parameter  product__parameter--material"><span>Фотополимер покрашенный</span></p>
+				<p class="product__parameter  product__parameter--amount">Количество экземпляров: <span>1</span></p>
+				<p class="product__parameter"><span>Фотополимер покрашенный</span></p>
+				<p class="product__parameter">Количество экземпляров: <span>1</span></p>			
+				<p class="product__result  product__result--ready">Выполнен на <span class="isotope-ready">90</span>%</p>
+				<p class="product__result  product__result--add"><a href="">+ добавить в магазин</a></p>
+			</div>	
+		</li>
+		<li class="page-content__item  product">
+			<img class="product__img" src="img/pic.jpg" height="180" width="206" alt="product">
+			<div class="product__details">
+				<h2 class="product__name">Название заказа</h2>
+				<p class="product__parameter  product__parameter--status">Статус: <span>отправлен</span></p>
+				<p class="product__parameter  product__parameter--loaded">Загружен: <span class="isotope-date">01.04.13</span></p>
+				<p class="product__parameter  product__parameter--material"><span>Фотополимер покрашенный</span></p>
+				<p class="product__parameter  product__parameter--amount">Количество экземпляров: <span>1</span></p>
+				<p class="product__result  product__result--ready">Выполнен на <span class="isotope-ready">50</span>%</p>
+				<p class="product__result  product__result--add"><a href="">+ добавить в магазин</a></p>
+			</div>	
+		</li>
+		<li class="page-content__item  product">
+			<img class="product__img" src="img/pic.jpg" height="180" width="206" alt="product">
+			<div class="product__details">
+				<h2 class="product__name">Название заказа</h2>
+				<p class="product__parameter  product__parameter--status">Статус: <span>отправлен</span></p>
+				<p class="product__parameter  product__parameter--loaded">Загружен: <span class="isotope-date">05.04.13</span></p>
+				<p class="product__parameter  product__parameter--material"><span>Фотополимер покрашенный</span></p>
+				<p class="product__parameter  product__parameter--amount">Количество экземпляров: <span>1</span></p>
+				<p class="product__parameter  product__parameter--color">Цвет: <span>черный</span></p>
+				<p class="product__parameter  product__parameter--dimensions">Размер: <span>160x70</span></p>
+				<p class="product__result  product__result--ready">Выполнен на <span class="isotope-ready">80</span>%</p>
+				<p class="product__result  product__result--add"><a href="">+ добавить в магазин</a></p>
+			</div>			
+		</li>					
+	</ul>
+	<div class="page-content__up"><a href="">Наверх</a></div>
+</section>
+
+<footer class="page-footer">
+	<div class="page-footer__inner">
+		<form action="" class="page-footer__form form">
+			<label class="form__email-label">
+				<span class="form__email-text">Ваш email:</span>
+				<input class="form__email-input" name="email" type="email" placeholder="DEDAL79@GMAIL.COM">
+			</label>			
+			<input id="form__checkbox" class="form__checkbox" name="subscribe" type="checkbox" checked>
+			<label class="form__checkbox-label" for="form__checkbox">Подписаться на новости</label>
+			<button class="form__button" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+		</form>
+	</div>
+</footer>
+<script src="js/script.min.js"></script>
+
+
+</body>
+</html>
