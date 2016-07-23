@@ -553,7 +553,7 @@ img {
 }
 
 .page-content {
-	text-align: center;
+	text-align: left;
 	max-width: 1024px;
 	width: 100%;
 	margin: 0 auto;
@@ -704,6 +704,7 @@ img {
 	outline: none;
 	border-radius: 5px;
 	padding: 8px 13px;
+	text-transform: uppercase;
 }
 
 .form__email-input::-webkit-input-placeholder {
