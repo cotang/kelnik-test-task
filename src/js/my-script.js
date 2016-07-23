@@ -26,8 +26,6 @@ $(document).ready(function(){
 
     /* isotope сортировка */  
   var container = $('.page-content__list');
-
-    // sorting
     $('#sort .sort__link').click(function(){
 
       if ( !$(this).hasClass('sort__link--sorted') ) {
@@ -55,5 +53,7 @@ $(document).ready(function(){
         sortBy : 'date'
       });
     });
+
+    $grid.isotope('layout');
 
 });
