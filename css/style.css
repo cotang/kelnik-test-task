@@ -553,7 +553,7 @@ img {
 }
 
 .page-content {
-	text-align: left;
+	text-align: center;
 	max-width: 1024px;
 	width: 100%;
 	margin: 0 auto;
@@ -561,6 +561,7 @@ img {
 }
 
 .page-content__list {
+	text-align: left;
 	padding-left: 0;
 	margin: 0;
 }
